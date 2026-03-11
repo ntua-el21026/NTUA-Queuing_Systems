@@ -1,0 +1,25 @@
+NTUA-Queuing_Systems/
+├── docs/
+│   ├── lectures/
+│   │   ├── Design and Evaluation Techniques for Queuing Systems.pdf
+│   │   ├── Exponential Distribution and Poisson Distribution - Markov Process of Births and Deaths.pdf
+│   │   ├── Introduction.pdf
+│   │   └── Queue and Waiting System Parameters.pdf
+│   └── project_structure/
+│       ├── project_struct.py
+│       └── project_struct.txt
+├── labs/
+│   ├── 1st/
+│   │   ├── material/
+│   │   │   ├── Lab1_queueing_2026.pdf
+│   │   │   └── Octave_Tutorial.pdf
+│   │   └── submission/
+│   ├── 2nd/
+│   ├── 3rd/
+│   ├── 4th/
+│   ├── 5th/
+│   └── 6th/
+├── LICENSE
+└── README.md
+
+Total directories: 13, Total files: 10
