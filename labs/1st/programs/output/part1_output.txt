@@ -1,0 +1,22 @@
+Mean value of Poisson with parameter lambda = 40 is
+mean_value_pois = 40.000
+Variance of Poisson with parameter lambda = 40 is
+variance_pois = 40.000
+Mean value of the Binomial with parameter n and p
+mean_value_bino =
+
+   40   40   40   40   40
+
+Variance of the Binomial as n increases
+variance_bino =
+
+         0   26.6667   35.5556   38.5185   39.9600
+
+The probability that both of the next two calls are external is
+Prob_b = 0.090000
+Check with binopdf
+Prob_b_bino = 0.090000
+The probability that out of the 5 calls, two calls exactly are external, is
+Prob_c = 0.3087
+Check with binopdf
+Prob_c_bino = 0.3087

@@ -1,0 +1,24 @@
+For a Poisson process with rate lambda = 10.00 events/sec,
+the interarrival times follow an exponential distribution with mean 1/lambda = 0.1000 sec.
+
+Estimated rate lambda_hat for increasing number of events:
+--------------------------------------------------------
+n =    100   total_time =     9.410809 sec   lambda_hat =  10.626079 events/sec
+n =    200   total_time =    19.676798 sec   lambda_hat =  10.164255 events/sec
+n =    400   total_time =    40.251597 sec   lambda_hat =   9.937494 events/sec
+n =    700   total_time =    70.536601 sec   lambda_hat =   9.923926 events/sec
+n =   1000   total_time =   105.505041 sec   lambda_hat =   9.478220 events/sec
+n =   5000   total_time =   490.597130 sec   lambda_hat =  10.191662 events/sec
+n =  50000   total_time =  4999.763849 sec   lambda_hat =  10.000472 events/sec
+n = 100000   total_time = 10033.501710 sec   lambda_hat =   9.966610 events/sec
+
+Theoretical results for two non-overlapping time windows:
+--------------------------------------------------------
+Window 1: DeltaT1 = 5 sec  -> mean number of events = 50.000000
+Window 2: DeltaT2 = 10 sec  -> mean number of events = 100.000000
+Total over both windows      -> mean number of events = 150.000000
+
+Distribution remarks:
+N1 ~ Poisson(lambda * DeltaT1) = Poisson(50.00)
+N2 ~ Poisson(lambda * DeltaT2) = Poisson(100.00)
+N1 + N2 ~ Poisson(150.00)

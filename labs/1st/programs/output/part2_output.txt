@@ -1,0 +1,12 @@
+Rate of X = min(X1, X2, X3): lambda = 2.916667
+Mean value of X = min(X1, X2, X3): 0.342857 sec
+
+For X ~ Exp with mean = 2.5 sec:
+
+Index 20000 corresponds to time t = 0.19999 sec
+Index 25000 corresponds to time s = 0.24999 sec
+Index 45000 corresponds to time t+s = 0.44999 sec
+
+Pr(X > 20000) = 0.923120
+Pr(X > 45000 | X > 25000) = 0.923116
+Memoryless check Pr(X > (45000-25000)) = 0.923116
