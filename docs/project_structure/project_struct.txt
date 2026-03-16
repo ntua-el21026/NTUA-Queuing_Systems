@@ -1,25 +1,89 @@
 NTUA-Queuing_Systems/
 ├── docs/
 │   ├── lectures/
-│   │   ├── Design and Evaluation Techniques for Queuing Systems.pdf
-│   │   ├── Exponential Distribution and Poisson Distribution - Markov Process of Births and Deaths.pdf
-│   │   ├── Introduction.pdf
-│   │   └── Queue and Waiting System Parameters.pdf
+│   │   ├── 1. Εισαγωγή.pdf
+│   │   ├── 2. Τεχνικές Σχεδίασης και Αξιολόγησης Συστημάτων Αναμονής.pdf
+│   │   ├── 3. Παράμετροι Ουρών και Συστημάτων Αναμονής.pdf
+│   │   ├── 4. Εκθετική Κατανομή και Κατανομή Poisson - Διαδικασία Markov Γεννήσεων - Θανάτων.pdf
+│   │   └── 5. Σφαιρικές & Λεπτομερείς Εξισώσεις Ισορροπίας - Ουρές Markov MM1, MM1N.pdf
 │   └── project_structure/
 │       ├── project_struct.py
 │       └── project_struct.txt
 ├── labs/
 │   ├── 1st/
-│   │   ├── material/
-│   │   │   ├── Lab1_queueing_2026.pdf
+│   │   ├── assignment/
+│   │   │   ├── lab1_2026.pdf
+│   │   │   ├── lab1_help_code.m
+│   │   │   ├── lab1_help_code.txt
+│   │   │   ├── lab1_intoduction_2026.pdf
 │   │   │   └── Octave_Tutorial.pdf
+│   │   ├── programs/
+│   │   │   ├── output/
+│   │   │   │   ├── part1_fig1.png
+│   │   │   │   ├── part1_fig2.png
+│   │   │   │   ├── part1_fig3.png
+│   │   │   │   ├── part1_output.txt
+│   │   │   │   ├── part2_fig1.png
+│   │   │   │   ├── part2_fig2.png
+│   │   │   │   ├── part2_output.txt
+│   │   │   │   ├── part3_fig1.png
+│   │   │   │   ├── part3_fig2.png
+│   │   │   │   └── part3_output.txt
+│   │   │   ├── pdf/
+│   │   │   │   ├── lab1_part1.pdf
+│   │   │   │   ├── lab1_part2.pdf
+│   │   │   │   └── lab1_part3.pdf
+│   │   │   ├── lab1_part1.m
+│   │   │   ├── lab1_part2.m
+│   │   │   └── lab1_part3.m
+│   │   ├── report/
+│   │   │   ├── lab1_03121026.pdf
+│   │   │   └── main.tex
 │   │   └── submission/
+│   │       ├── lab1_03121026.pdf
+│   │       ├── lab1_part1.m
+│   │       ├── lab1_part2.m
+│   │       └── lab1_part3.m
 │   ├── 2nd/
+│   │   ├── assignment/
+│   │   │   ├── lab2_2026.pdf
+│   │   │   ├── lab2_help_code.m
+│   │   │   └── lab2_help_code.txt
+│   │   ├── programs/
+│   │   │   ├── output/
+│   │   │   └── pdf/
+│   │   ├── report/
+│   │   └── submission/
 │   ├── 3rd/
+│   │   ├── assignment/
+│   │   ├── programs/
+│   │   │   ├── output/
+│   │   │   └── pdf/
+│   │   ├── report/
+│   │   └── submission/
 │   ├── 4th/
+│   │   ├── assignment/
+│   │   ├── programs/
+│   │   │   ├── output/
+│   │   │   └── pdf/
+│   │   ├── report/
+│   │   └── submission/
 │   ├── 5th/
+│   │   ├── assignment/
+│   │   ├── programs/
+│   │   │   ├── output/
+│   │   │   └── pdf/
+│   │   ├── report/
+│   │   └── submission/
 │   └── 6th/
+│       ├── assignment/
+│       ├── programs/
+│       │   ├── output/
+│       │   └── pdf/
+│       ├── report/
+│       └── submission/
+├── .gitattributes
 ├── LICENSE
 └── README.md
 
-Total directories: 13, Total files: 10
+Total directories: 47, Total files: 40
