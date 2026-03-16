@@ -1,16 +1,15 @@
-# Default behavior
+# Default normalization
 * text=auto
 
-# Keep repository control files as LF to avoid bootstrap/safecrlf issues
+# Keep Git control files stable
 .gitattributes text eol=lf
 .gitignore    text eol=lf
 
-# MATLAB / Octave
+# MATLAB / Octave source
 *.m   text eol=crlf
 *.mat binary
 
-# Text / docs
-*.txt  text=auto
+# General text files
 *.md   text=auto
 *.tex  text=auto
 *.bib  text=auto
@@ -20,13 +19,18 @@
 *.yaml text=auto
 *.yml  text=auto
 *.xml  text=auto
-
-# Scripts
 *.py   text=auto
+
+# Shell scripts must stay LF
 *.sh   text eol=lf
 *.bash text eol=lf
 
-# Binary files
+# Project-specific TXT policy
+docs/project_structure/*.txt      text eol=lf
+labs/1st/programs/output/*.txt    text eol=crlf
+*.txt                             text=auto
+
+# Binary assets
 *.pdf  binary
 *.png  binary
 *.jpg  binary
