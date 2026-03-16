@@ -1,0 +1,58 @@
+============================================================
+Case 1: lambda = 5.00, mu = 1.00
+Stationary probabilities [P0 P1 P2 P3]:
+ Columns 1 through 3:
+
+     0.07766990291262139      0.1941747572815534      0.3236245954692556
+
+ Column 4:
+
+      0.4045307443365695
+Blocking probability = 0.404530744337
+Equilibrium throughput = 0.922330097087 customers/sec
+Mean customers served in 60 sec = 55.339805825243
+Convergence time (within 1% of steady state) = 4.3900 sec
+
+============================================================
+Case 2: lambda = 5.00, mu = 5.00
+Stationary probabilities [P0 P1 P2 P3]:
+ Columns 1 through 3:
+
+      0.5853658536585366      0.2926829268292683      0.0975609756097561
+
+ Column 4:
+
+     0.02439024390243903
+Blocking probability = 0.024390243902
+Equilibrium throughput = 2.073170731707 customers/sec
+Mean customers served in 60 sec = 124.390243902439
+Convergence time (within 1% of steady state) = 0.9800 sec
+
+============================================================
+Case 3: lambda = 5.00, mu = 20.00
+Stationary probabilities [P0 P1 P2 P3]:
+ Columns 1 through 3:
+
+      0.8802292263610314      0.1100286532951289    0.009169054441260744
+
+ Column 4:
+
+   0.0005730659025787966
+Blocking probability = 0.000573065903
+Equilibrium throughput = 2.395415472779 customers/sec
+Mean customers served in 60 sec = 143.724928366762
+Convergence time (within 1% of steady state) = 0.1400 sec
+
+============================================================
+Summary table [mu, P0, P1, P2, P3, avg_served_60]
+ Columns 1 through 3:
+
+                       1     0.07766990291262139      0.1941747572815534
+                       5      0.5853658536585366      0.2926829268292683
+                      20      0.8802292263610314      0.1100286532951289
+
+ Columns 4 through 6:
+
+      0.3236245954692556      0.4045307443365695       55.33980582524271
+      0.0975609756097561     0.02439024390243903        124.390243902439
+    0.009169054441260744   0.0005730659025787966       143.7249283667622

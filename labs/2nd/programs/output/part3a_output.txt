@@ -1,0 +1,49 @@
+Transition-rate matrix Q:
+ Columns 1 through 3:
+
+                    -2.5                     2.5                       0
+                      10      -11.66666666666667       1.666666666666667
+                       0                      10                  -11.25
+                       0                       0                      10
+
+ Column 4:
+
+                       0
+                       0
+                    1.25
+                     -10
+Theoretical stationary probabilities:
+ Columns 1 through 3:
+
+      0.7710843373493976      0.1927710843373494      0.0321285140562249
+
+ Column 4:
+
+    0.004016064257028113
+Octave stationary probabilities:
+ Columns 1 through 3:
+
+      0.7710843373493974      0.1927710843373494      0.0321285140562249
+
+ Column 4:
+
+    0.004016064257028113
+Comparison table [state, P_theory, P_octave, abs_error]:
+ Columns 1 through 3:
+
+                       0      0.7710843373493976      0.7710843373493974
+                       1      0.1927710843373494      0.1927710843373494
+                       2      0.0321285140562249      0.0321285140562249
+                       3    0.004016064257028113    0.004016064257028113
+
+ Column 4:
+
+   2.220446049250313e-16
+   2.775557561562891e-17
+   6.938893903907228e-18
+                       0
+Blocking probability P_block = P3 = 0.004016064257
+Mean number of customers E[n(t)] = 0.269076305221
+Equilibrium throughput = 2.289156626506 customers/sec
+Mean customers served in 60 sec = 137.349397590361
+Time until all probabilities are within 1% of steady state: 0.3700 sec

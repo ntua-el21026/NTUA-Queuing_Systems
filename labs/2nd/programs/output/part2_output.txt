@@ -1,0 +1,9 @@
+Accepted service rates for ergodicity:
+mu > lambda = 10.00 customers/min, with mu <= 20.00 customers/min
+
+So the acceptable range is: 10.00 < mu <= 20.00 customers/min
+
+Minimum delay in the scanned range occurs at:
+mu = 20.00 customers/min
+E(T) = 0.100000 min
+Throughput there is X = 10.000000 customers/min
