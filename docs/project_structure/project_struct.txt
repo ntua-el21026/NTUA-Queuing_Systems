@@ -51,9 +51,36 @@ NTUA-Queuing_Systems/
 │   │   │   └── lab2_help_code.txt
 │   │   ├── programs/
 │   │   │   ├── output/
-│   │   │   └── pdf/
+│   │   │   │   ├── part2_fig1.png
+│   │   │   │   ├── part2_fig2.png
+│   │   │   │   ├── part2_fig3.png
+│   │   │   │   ├── part2_fig4.png
+│   │   │   │   ├── part2_output.png
+│   │   │   │   ├── part2_output.txt
+│   │   │   │   ├── part3a_fig1.png
+│   │   │   │   ├── part3a_fig2.png
+│   │   │   │   ├── part3a_output.png
+│   │   │   │   ├── part3a_output.txt
+│   │   │   │   ├── part3b_fig1.png
+│   │   │   │   ├── part3b_fig2.png
+│   │   │   │   ├── part3b_fig3.png
+│   │   │   │   ├── part3b_output.png
+│   │   │   │   └── part3b_output.txt
+│   │   │   ├── pdf/
+│   │   │   │   ├── lab2_part2.pdf
+│   │   │   │   ├── lab2_part3a.pdf
+│   │   │   │   └── lab2_part3b.pdf
+│   │   │   ├── lab2_part2.m
+│   │   │   ├── lab2_part3a.m
+│   │   │   └── lab2_part3b.m
 │   │   ├── report/
+│   │   │   ├── lab2_03121026.pdf
+│   │   │   └── main.tex
 │   │   └── submission/
+│   │       ├── lab2_03121026.pdf
+│   │       ├── lab2_part2.m
+│   │       ├── lab2_part3a.m
+│   │       └── lab2_part3b.m
 │   ├── 3rd/
 │   │   ├── assignment/
 │   │   ├── programs/
@@ -86,4 +113,4 @@ NTUA-Queuing_Systems/
 ├── LICENSE
 └── README.md
 
-Total directories: 47, Total files: 40
+Total directories: 47, Total files: 67
