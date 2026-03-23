@@ -5,7 +5,8 @@ NTUA-Queuing_Systems/
 │   │   ├── 2. Τεχνικές Σχεδίασης και Αξιολόγησης Συστημάτων Αναμονής.pdf
 │   │   ├── 3. Παράμετροι Ουρών και Συστημάτων Αναμονής.pdf
 │   │   ├── 4. Εκθετική Κατανομή και Κατανομή Poisson - Διαδικασία Markov Γεννήσεων - Θανάτων.pdf
-│   │   └── 5. Σφαιρικές & Λεπτομερείς Εξισώσεις Ισορροπίας - Ουρές Markov MM1, MM1N.pdf
+│   │   ├── 5. Σφαιρικές & Λεπτομερείς Εξισώσεις Ισορροπίας - Ουρές Markov MM1, MM1N.pdf
+│   │   └── 6. Προσομοίωση.pdf
 │   └── project_structure/
 │       ├── project_struct.py
 │       └── project_struct.txt
@@ -48,7 +49,8 @@ NTUA-Queuing_Systems/
 │   │   ├── assignment/
 │   │   │   ├── lab2_2026.pdf
 │   │   │   ├── lab2_help_code.m
-│   │   │   └── lab2_help_code.txt
+│   │   │   ├── lab2_help_code.txt
+│   │   │   └── lab2_intoduction_2026.pdf
 │   │   ├── programs/
 │   │   │   ├── output/
 │   │   │   │   ├── part2_fig1.png
@@ -83,6 +85,10 @@ NTUA-Queuing_Systems/
 │   │       └── lab2_part3b.m
 │   ├── 3rd/
 │   │   ├── assignment/
+│   │   │   ├── lab3_2026.pdf
+│   │   │   ├── lab3_help_code.m
+│   │   │   ├── lab3_help_code.txt
+│   │   │   └── lab3_intoduction_2026.pdf
 │   │   ├── programs/
 │   │   │   ├── output/
 │   │   │   └── pdf/
@@ -113,4 +119,4 @@ NTUA-Queuing_Systems/
 ├── LICENSE
 └── README.md
 
-Total directories: 47, Total files: 67
+Total directories: 47, Total files: 73
