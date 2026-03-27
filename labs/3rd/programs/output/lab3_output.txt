@@ -1,0 +1,263 @@
+DEBUG TRACE - first 30 transitions
+lambda = 5, T = 30, B = 0, seed = 1
+============================================================
+Step  1 | state= 0 | event=arrival (accepted) | arrivals= 1 | new state= 1
+Step  2 | state= 1 | event=departure        | arrivals= 1 | new state= 0
+Step  3 | state= 0 | event=arrival (accepted) | arrivals= 2 | new state= 1
+Step  4 | state= 1 | event=departure        | arrivals= 2 | new state= 0
+Step  5 | state= 0 | event=arrival (accepted) | arrivals= 3 | new state= 1
+Step  6 | state= 1 | event=arrival (accepted) | arrivals= 4 | new state= 2
+Step  7 | state= 2 | event=arrival (accepted) | arrivals= 5 | new state= 3
+Step  8 | state= 3 | event=arrival (accepted) | arrivals= 6 | new state= 4
+Step  9 | state= 4 | event=arrival (accepted) | arrivals= 7 | new state= 5
+Step 10 | state= 5 | event=arrival (accepted) | arrivals= 8 | new state= 6
+Step 11 | state= 6 | event=arrival (accepted) | arrivals= 9 | new state= 7
+Step 12 | state= 7 | event=departure        | arrivals= 9 | new state= 6
+Step 13 | state= 6 | event=arrival (accepted) | arrivals=10 | new state= 7
+Step 14 | state= 7 | event=arrival (accepted) | arrivals=11 | new state= 8
+Step 15 | state= 8 | event=arrival (accepted) | arrivals=12 | new state= 9
+Step 16 | state= 9 | event=arrival (accepted) | arrivals=13 | new state=10
+Step 17 | state=10 | event=arrival (rejected) | arrivals=14 | new state=10
+Step 18 | state=10 | event=arrival (rejected) | arrivals=15 | new state=10
+Step 19 | state=10 | event=arrival (rejected) | arrivals=16 | new state=10
+Step 20 | state=10 | event=departure        | arrivals=16 | new state= 9
+Step 21 | state= 9 | event=arrival (accepted) | arrivals=17 | new state=10
+Step 22 | state=10 | event=arrival (rejected) | arrivals=18 | new state=10
+Step 23 | state=10 | event=departure        | arrivals=18 | new state= 9
+Step 24 | state= 9 | event=departure        | arrivals=18 | new state= 8
+Step 25 | state= 8 | event=departure        | arrivals=18 | new state= 7
+Step 26 | state= 7 | event=arrival (accepted) | arrivals=19 | new state= 8
+Step 27 | state= 8 | event=arrival (accepted) | arrivals=20 | new state= 9
+Step 28 | state= 9 | event=arrival (accepted) | arrivals=21 | new state=10
+Step 29 | state=10 | event=departure        | arrivals=21 | new state= 9
+Step 30 | state= 9 | event=departure        | arrivals=21 | new state= 8
+
+End of debug trace.
+To disable debugging for the normal executions, set:
+DEBUG_TRACE = false
+
+============================================================
+Running simulation for lambda = 1, T = 100000, B = 5000
+============================================================
+lambda = 1, mu = 5, K = 10, T = 100000, B = 5000
+Runtime = 6.0681 sec
+
+--- Using all transitions ---
+Mean number in system L       = 0.2511296521
+Rejection probability P_rej   = 0.0000000000
+Mean time in system W         = 0.2505772043
+State probabilities P         = [ 0.79945865 0.16008330 0.03232467 0.00655883 0.00122766 0.00027
+151 0.00007539 0.00000000 0.00000000 0.00000000 0.00000000 ]
+
+--- Ignoring first B transitions ---
+Mean number in system L_B     = 0.2509471723
+Rejection probability P_rej_B = 0.0000000000
+Mean time in system W_B       = 0.2506592621
+State probabilities P_B       = [ 0.79959641 0.15997915 0.03231434 0.00654240 0.00120567 0.00028
+276 0.00007928 0.00000000 0.00000000 0.00000000 0.00000000 ]
+
+Relative difference in L      = 0.072664 %
+Relative difference in P_rej  = 0.000000 %
+Relative difference in W      = 0.032748 %
+
+============================================================
+Running simulation for lambda = 5, T = 100000, B = 5000
+============================================================
+lambda = 5, mu = 5, K = 10, T = 100000, B = 5000
+Runtime = 6.0318 sec
+
+--- Using all transitions ---
+Mean number in system L       = 5.0669430209
+Rejection probability P_rej   = 0.0955210238
+Mean time in system W         = 1.1218601440
+State probabilities P         = [ 0.08966699 0.08890558 0.08922529 0.08838208 0.08898398 0.09082
+476 0.09041571 0.09071322 0.09425913 0.09341150 0.09521176 ]
+
+--- Ignoring first B transitions ---
+Mean number in system L_B     = 5.1071053828
+Rejection probability P_rej_B = 0.0968930911
+Mean time in system W_B       = 1.1319838096
+State probabilities P_B       = [ 0.08845269 0.08741447 0.08785467 0.08707792 0.08838430 0.09068
+520 0.09099106 0.09164490 0.09596627 0.09469143 0.09683710 ]
+
+Relative difference in L      = 0.792635 %
+Relative difference in P_rej  = 1.436403 %
+Relative difference in W      = 0.902400 %
+
+============================================================
+Running simulation for lambda = 10, T = 100000, B = 5000
+============================================================
+lambda = 10, mu = 5, K = 10, T = 100000, B = 5000
+Runtime = 6.3200 sec
+
+--- Using all transitions ---
+Mean number in system L       = 9.0373462585
+Rejection probability P_rej   = 0.5063846947
+Mean time in system W         = 1.8266043984
+State probabilities P         = [ 0.00081372 0.00144580 0.00216852 0.00373982 0.00677244 0.01378
+517 0.02777216 0.06007758 0.12141213 0.25427131 0.50774136 ]
+
+--- Ignoring first B transitions ---
+Mean number in system L_B     = 9.0350260323
+Rejection probability P_rej_B = 0.5063205560
+Mean time in system W_B       = 1.8278095613
+State probabilities P_B       = [ 0.00082343 0.00149152 0.00226441 0.00376726 0.00672410 0.01396
+358 0.02808737 0.05998343 0.12131367 0.25374031 0.50784093 ]
+
+Relative difference in L      = 0.025674 %
+Relative difference in P_rej  = 0.012666 %
+Relative difference in W      = 0.065978 %
+
+warning: legend: 'best' not yet implemented for location specifier, using 'northeast' instead
+warning: legend: 'best' not yet implemented for location specifier, using 'northeast' instead
+warning: legend: 'best' not yet implemented for location specifier, using 'northeast' instead
+============================================================
+Running simulation for lambda = 1, T = 1000000, B = 20000
+============================================================
+lambda = 1, mu = 5, K = 10, T = 1000000, B = 20000
+Runtime = 70.0180 sec
+
+--- Using all transitions ---
+Mean number in system L       = 0.2505027289
+Rejection probability P_rej   = 0.0000000000
+Mean time in system W         = 0.2503982626
+State probabilities P         = [ 0.79980439 0.15989668 0.03226471 0.00646411 0.00125921 0.00023
+789 0.00005671 0.00001337 0.00000214 0.00000078 0.00000000 ]
+
+--- Ignoring first B transitions ---
+Mean number in system L_B     = 0.2503824648
+Rejection probability P_rej_B = 0.0000000000
+Mean time in system W_B       = 0.2504195813
+State probabilities P_B       = [ 0.79990402 0.15981203 0.03225954 0.00645092 0.00126277 0.00023
+721 0.00005691 0.00001364 0.00000218 0.00000079 0.00000000 ]
+
+Relative difference in L      = 0.048009 %
+Relative difference in P_rej  = 0.000000 %
+Relative difference in W      = 0.008514 %
+
+============================================================
+Running simulation for lambda = 5, T = 1000000, B = 20000
+============================================================
+lambda = 5, mu = 5, K = 10, T = 1000000, B = 20000
+Runtime = 91.4048 sec
+
+--- Using all transitions ---
+Mean number in system L       = 5.0026245648
+Rejection probability P_rej   = 0.0898944867
+Mean time in system W         = 1.1012411221
+State probabilities P         = [ 0.08999344 0.09049205 0.09038443 0.09076960 0.09155982 0.09187
+900 0.09182116 0.09179528 0.09157453 0.08997642 0.08975426 ]
+
+--- Ignoring first B transitions ---
+Mean number in system L_B     = 5.0080060496
+Rejection probability P_rej_B = 0.0901637587
+Mean time in system W_B       = 1.1026525045
+State probabilities P_B       = [ 0.08983444 0.09029272 0.09023266 0.09062306 0.09149535 0.09182
+429 0.09177938 0.09192607 0.09181162 0.09017976 0.09000064 ]
+
+Relative difference in L      = 0.107573 %
+Relative difference in P_rej  = 0.299542 %
+Relative difference in W      = 0.128163 %
+
+============================================================
+Running simulation for lambda = 10, T = 1000000, B = 20000
+============================================================
+lambda = 10, mu = 5, K = 10, T = 1000000, B = 20000
+Runtime = 68.0364 sec
+
+--- Using all transitions ---
+Mean number in system L       = 9.0193533021
+Rejection probability P_rej   = 0.5019511910
+Mean time in system W         = 1.8090288162
+State probabilities P         = [ 0.00047210 0.00093474 0.00183579 0.00375632 0.00744585 0.01515
+244 0.03045462 0.06143927 0.12444488 0.25106915 0.50299484 ]
+
+--- Ignoring first B transitions ---
+Mean number in system L_B     = 9.0198466095
+Rejection probability P_rej_B = 0.5021108010
+Mean time in system W_B       = 1.8096164018
+State probabilities P_B       = [ 0.00046298 0.00089190 0.00181307 0.00376460 0.00744556 0.01519
+379 0.03049994 0.06138163 0.12443250 0.25098774 0.50312628 ]
+
+Relative difference in L      = 0.005469 %
+Relative difference in P_rej  = 0.031798 %
+Relative difference in W      = 0.032481 %
+
+warning: legend: 'best' not yet implemented for location specifier, using 'northeast' instead
+warning: legend: 'best' not yet implemented for location specifier, using 'northeast' instead
+warning: legend: 'best' not yet implemented for location specifier, using 'northeast' instead
+============================================================
+Running simulation for lambda = 1, T = 10000000, B = 120000
+============================================================
+lambda = 1, mu = 5, K = 10, T = 10000000, B = 120000
+Runtime = 852.1110 sec
+
+--- Using all transitions ---
+Mean number in system L       = 0.2504273515
+Rejection probability P_rej   = 0.0000000000
+Mean time in system W         = 0.2502386518
+State probabilities P         = [ 0.79975162 0.16010075 0.03211215 0.00643726 0.00127917 0.00025
+538 0.00005141 0.00001010 0.00000168 0.00000048 0.00000000 ]
+
+--- Ignoring first B transitions ---
+Mean number in system L_B     = 0.2504118097
+Rejection probability P_rej_B = 0.0000000000
+Mean time in system W_B       = 0.2502303841
+State probabilities P_B       = [ 0.79976174 0.16009561 0.03210828 0.00643548 0.00127993 0.00025
+533 0.00005124 0.00001020 0.00000170 0.00000048 0.00000000 ]
+
+Relative difference in L      = 0.006206 %
+Relative difference in P_rej  = 0.000000 %
+Relative difference in W      = 0.003304 %
+
+============================================================
+Running simulation for lambda = 5, T = 10000000, B = 120000
+============================================================
+lambda = 5, mu = 5, K = 10, T = 10000000, B = 120000
+Runtime = 639.0551 sec
+
+--- Using all transitions ---
+Mean number in system L       = 5.0076954577
+Rejection probability P_rej   = 0.0911728040
+Mean time in system W         = 1.1017529664
+State probabilities P         = [ 0.09040039 0.09059619 0.09068113 0.09101954 0.09087455 0.09094
+612 0.09094979 0.09098016 0.09122787 0.09117577 0.09114848 ]
+
+--- Ignoring first B transitions ---
+Mean number in system L_B     = 5.0075222213
+Rejection probability P_rej_B = 0.0911554245
+Mean time in system W_B       = 1.1016549734
+State probabilities P_B       = [ 0.09039147 0.09060094 0.09068645 0.09103910 0.09088581 0.09093
+975 0.09095386 0.09098918 0.09121022 0.09117228 0.09113094 ]
+
+Relative difference in L      = 0.003459 %
+Relative difference in P_rej  = 0.019062 %
+Relative difference in W      = 0.008894 %
+
+============================================================
+Running simulation for lambda = 10, T = 10000000, B = 120000
+============================================================
+lambda = 10, mu = 5, K = 10, T = 10000000, B = 120000
+Runtime = 572.3553 sec
+
+--- Using all transitions ---
+Mean number in system L       = 9.0065989686
+Rejection probability P_rej   = 0.5004547366
+Mean time in system W         = 1.8020232187
+State probabilities P         = [ 0.00046642 0.00096135 0.00192156 0.00390119 0.00784720 0.01562
+832 0.03114148 0.06239525 0.12498207 0.25046324 0.50029192 ]
+
+--- Ignoring first B transitions ---
+Mean number in system L_B     = 9.0062655890
+Rejection probability P_rej_B = 0.5003975920
+Mean time in system W_B       = 1.8017936156
+State probabilities P_B       = [ 0.00046348 0.00095733 0.00192049 0.00390357 0.00785770 0.01564
+922 0.03117419 0.06242214 0.12502019 0.25039893 0.50023277 ]
+
+Relative difference in L      = 0.003702 %
+Relative difference in P_rej  = 0.011419 %
+Relative difference in W      = 0.012741 %
+
+warning: legend: 'best' not yet implemented for location specifier, using 'northeast' instead
+warning: legend: 'best' not yet implemented for location specifier, using 'northeast' instead
+warning: legend: 'best' not yet implemented for location specifier, using 'northeast' instead
