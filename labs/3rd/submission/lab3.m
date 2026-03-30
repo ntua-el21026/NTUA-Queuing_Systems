@@ -5,7 +5,11 @@ function lab3
   % ============================================================
   % Lab 3 - M/M/1/10 Simulation
   % Questions (1) and (2)
-  % Octave-compatible single-file function version
+  % Updated version:
+  %   1. Plots ergodic probabilities with and without transient
+  %      on the same diagram
+  %   2. Places legends outside the plotting area
+  %
   % File name must be: lab3.m
   % Run with: lab3
   % ============================================================
@@ -73,23 +77,30 @@ function lab3
     endfor
 
     % --------------------------------------------------------
-    % Figure 1 for this (T,B): final ergodic probabilities
-    % after removing transient
+    % Figure 1 for this (T,B): ergodic probabilities
+    % WITH and WITHOUT transient on the same diagram
     % --------------------------------------------------------
     figure(cfg);
     clf;
 
     for li = 1:length(lambdas)
       subplot(length(lambdas), 1, li);
-      bar(0:K, results{cfg, li}.P_B);
+
+      prob_matrix = [results{cfg, li}.P(:), results{cfg, li}.P_B(:)];
+      bar(0:K, prob_matrix, 'grouped');
       grid on;
+
       xlim([-0.5, K + 0.5]);
-      ylim([0, max(0.01, 1.05 * max(results{cfg, li}.P_B))]);
-      title(sprintf(['Ergodic state probabilities after transient removal ', ...
-                     '(lambda = %g, T = %d, B = %d)'], ...
+      ylim([0, max(0.01, 1.10 * max(prob_matrix(:)))]);
+
+      title(sprintf(['Ergodic state probabilities ', ...
+                     '(\\lambda = %g, T = %d, B = %d)'], ...
                      lambdas(li), T, B));
       xlabel('State');
       ylabel('Probability');
+
+      hleg = legend('All transitions', 'After transient');
+      safe_legend_outside(hleg);
     endfor
 
     % --------------------------------------------------------
@@ -116,11 +127,14 @@ function lab3
 
       grid on;
       title(sprintf(['Evolution of estimated mean number in system ', ...
-                     '(lambda = %g, T = %d, B = %d)'], ...
+                     '(\\lambda = %g, T = %d, B = %d)'], ...
                      lambdas(li), T, B));
       xlabel('Number of transitions');
       ylabel('L estimate');
-      legend('All transitions', 'After transient', 'B cutoff', 'Location', 'best');
+
+      hleg = legend('All transitions', 'After transient', 'B cutoff');
+      safe_legend_outside(hleg);
+
       hold off;
     endfor
   endfor
@@ -376,4 +390,23 @@ function print_results(results)
           100 * abs(results.P_rej_B - results.P_rej) / max(abs(results.P_rej), eps));
   fprintf('Relative difference in W      = %.6f %%\n\n', ...
           100 * abs(results.W_B - results.W) / max(abs(results.W), eps));
+endfunction
+
+
+function safe_legend_outside(hleg)
+  % Places legend outside the axes when supported by the Octave version.
+  % Falls back to northeast if needed.
+  try
+    set(hleg, 'location', 'eastoutside');
+  catch
+    try
+      legend(hleg, 'location', 'eastoutside');
+    catch
+      try
+        set(hleg, 'location', 'northeast');
+      catch
+        % do nothing
+      end_try_catch
+    end_try_catch
+  end_try_catch
 endfunction

@@ -1,3 +1,4 @@
+============================================================
 DEBUG TRACE - first 30 transitions
 lambda = 5, T = 30, B = 0, seed = 1
 ============================================================
@@ -40,7 +41,7 @@ DEBUG_TRACE = false
 Running simulation for lambda = 1, T = 100000, B = 5000
 ============================================================
 lambda = 1, mu = 5, K = 10, T = 100000, B = 5000
-Runtime = 6.0681 sec
+Runtime = 6.6001 sec
 
 --- Using all transitions ---
 Mean number in system L       = 0.2511296521
@@ -64,7 +65,7 @@ Relative difference in W      = 0.032748 %
 Running simulation for lambda = 5, T = 100000, B = 5000
 ============================================================
 lambda = 5, mu = 5, K = 10, T = 100000, B = 5000
-Runtime = 6.0318 sec
+Runtime = 6.9150 sec
 
 --- Using all transitions ---
 Mean number in system L       = 5.0669430209
@@ -88,7 +89,7 @@ Relative difference in W      = 0.902400 %
 Running simulation for lambda = 10, T = 100000, B = 5000
 ============================================================
 lambda = 10, mu = 5, K = 10, T = 100000, B = 5000
-Runtime = 6.3200 sec
+Runtime = 5.8064 sec
 
 --- Using all transitions ---
 Mean number in system L       = 9.0373462585
@@ -108,14 +109,11 @@ Relative difference in L      = 0.025674 %
 Relative difference in P_rej  = 0.012666 %
 Relative difference in W      = 0.065978 %
 
-warning: legend: 'best' not yet implemented for location specifier, using 'northeast' instead
-warning: legend: 'best' not yet implemented for location specifier, using 'northeast' instead
-warning: legend: 'best' not yet implemented for location specifier, using 'northeast' instead
 ============================================================
 Running simulation for lambda = 1, T = 1000000, B = 20000
 ============================================================
 lambda = 1, mu = 5, K = 10, T = 1000000, B = 20000
-Runtime = 70.0180 sec
+Runtime = 65.9007 sec
 
 --- Using all transitions ---
 Mean number in system L       = 0.2505027289
@@ -139,7 +137,7 @@ Relative difference in W      = 0.008514 %
 Running simulation for lambda = 5, T = 1000000, B = 20000
 ============================================================
 lambda = 5, mu = 5, K = 10, T = 1000000, B = 20000
-Runtime = 91.4048 sec
+Runtime = 67.4362 sec
 
 --- Using all transitions ---
 Mean number in system L       = 5.0026245648
@@ -163,7 +161,7 @@ Relative difference in W      = 0.128163 %
 Running simulation for lambda = 10, T = 1000000, B = 20000
 ============================================================
 lambda = 10, mu = 5, K = 10, T = 1000000, B = 20000
-Runtime = 68.0364 sec
+Runtime = 59.6151 sec
 
 --- Using all transitions ---
 Mean number in system L       = 9.0193533021
@@ -183,14 +181,11 @@ Relative difference in L      = 0.005469 %
 Relative difference in P_rej  = 0.031798 %
 Relative difference in W      = 0.032481 %
 
-warning: legend: 'best' not yet implemented for location specifier, using 'northeast' instead
-warning: legend: 'best' not yet implemented for location specifier, using 'northeast' instead
-warning: legend: 'best' not yet implemented for location specifier, using 'northeast' instead
 ============================================================
 Running simulation for lambda = 1, T = 10000000, B = 120000
 ============================================================
 lambda = 1, mu = 5, K = 10, T = 10000000, B = 120000
-Runtime = 852.1110 sec
+Runtime = 635.6335 sec
 
 --- Using all transitions ---
 Mean number in system L       = 0.2504273515
@@ -214,7 +209,7 @@ Relative difference in W      = 0.003304 %
 Running simulation for lambda = 5, T = 10000000, B = 120000
 ============================================================
 lambda = 5, mu = 5, K = 10, T = 10000000, B = 120000
-Runtime = 639.0551 sec
+Runtime = 639.4556 sec
 
 --- Using all transitions ---
 Mean number in system L       = 5.0076954577
@@ -238,7 +233,7 @@ Relative difference in W      = 0.008894 %
 Running simulation for lambda = 10, T = 10000000, B = 120000
 ============================================================
 lambda = 10, mu = 5, K = 10, T = 10000000, B = 120000
-Runtime = 572.3553 sec
+Runtime = 626.7589 sec
 
 --- Using all transitions ---
 Mean number in system L       = 9.0065989686
@@ -257,7 +252,3 @@ State probabilities P_B       = [ 0.00046348 0.00095733 0.00192049 0.00390357 0.
 Relative difference in L      = 0.003702 %
 Relative difference in P_rej  = 0.011419 %
 Relative difference in W      = 0.012741 %
-
-warning: legend: 'best' not yet implemented for location specifier, using 'northeast' instead
-warning: legend: 'best' not yet implemented for location specifier, using 'northeast' instead
-warning: legend: 'best' not yet implemented for location specifier, using 'northeast' instead

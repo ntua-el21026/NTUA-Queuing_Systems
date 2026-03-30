@@ -6,7 +6,8 @@ NTUA-Queuing_Systems/
 │   │   ├── 3. Παράμετροι Ουρών και Συστημάτων Αναμονής.pdf
 │   │   ├── 4. Εκθετική Κατανομή και Κατανομή Poisson - Διαδικασία Markov Γεννήσεων - Θανάτων.pdf
 │   │   ├── 5. Σφαιρικές & Λεπτομερείς Εξισώσεις Ισορροπίας - Ουρές Markov MM1, MM1N.pdf
-│   │   └── 6. Προσομοίωση.pdf
+│   │   ├── 6. Προσομοίωση.pdf
+│   │   └── 7. Συστήματα Πολλών Εξυπηρετητών.pdf
 │   └── project_structure/
 │       ├── project_struct.py
 │       └── project_struct.txt
@@ -91,11 +92,30 @@ NTUA-Queuing_Systems/
 │   │   │   └── lab3_intoduction_2026.pdf
 │   │   ├── programs/
 │   │   │   ├── output/
-│   │   │   └── pdf/
+│   │   │   │   ├── lab3_output.pdf
+│   │   │   │   ├── lab3_output.txt
+│   │   │   │   ├── t_10000000_b_120000_diag.png
+│   │   │   │   ├── t_10000000_b_120000_prob.png
+│   │   │   │   ├── t_1000000_b_20000_diag.png
+│   │   │   │   ├── t_1000000_b_20000_prob.png
+│   │   │   │   ├── t_100000_b_5000_diag.png
+│   │   │   │   └── t_100000_b_5000_prob.png
+│   │   │   ├── pdf/
+│   │   │   │   ├── lab3.pdf
+│   │   │   │   └── lab3_output.pdf
+│   │   │   └── lab3.m
 │   │   ├── report/
+│   │   │   ├── lab3_03121026.pdf
+│   │   │   └── main.tex
 │   │   └── submission/
+│   │       ├── lab3.m
+│   │       └── lab3_03121026.pdf
 │   ├── 4th/
 │   │   ├── assignment/
+│   │   │   ├── lab4_2026.pdf
+│   │   │   ├── lab4_extra.pdf
+│   │   │   ├── lab4_help_code.m
+│   │   │   └── lab4_help_code.txt
 │   │   ├── programs/
 │   │   │   ├── output/
 │   │   │   └── pdf/
@@ -119,4 +139,4 @@ NTUA-Queuing_Systems/
 ├── LICENSE
 └── README.md
 
-Total directories: 47, Total files: 73
+Total directories: 47, Total files: 93
