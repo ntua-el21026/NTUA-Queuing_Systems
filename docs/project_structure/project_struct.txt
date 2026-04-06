@@ -115,12 +115,22 @@ NTUA-Queuing_Systems/
 │   │   │   ├── lab4_2026.pdf
 │   │   │   ├── lab4_extra.pdf
 │   │   │   ├── lab4_help_code.m
-│   │   │   └── lab4_help_code.txt
+│   │   │   ├── lab4_help_code.txt
+│   │   │   └── lab4_intoduction_2026.pdf
 │   │   ├── programs/
 │   │   │   ├── output/
-│   │   │   └── pdf/
+│   │   │   │   ├── lab4_output.pdf
+│   │   │   │   └── lab4_output.txt
+│   │   │   ├── pdf/
+│   │   │   │   ├── lab4.pdf
+│   │   │   │   └── lab4_output.pdf
+│   │   │   └── lab4.m
 │   │   ├── report/
+│   │   │   ├── lab4_03121026.pdf
+│   │   │   └── main.tex
 │   │   └── submission/
+│   │       ├── lab4.m
+│   │       └── lab4_03121026.pdf
 │   ├── 5th/
 │   │   ├── assignment/
 │   │   ├── programs/
@@ -139,4 +149,4 @@ NTUA-Queuing_Systems/
 ├── LICENSE
 └── README.md
 
-Total directories: 47, Total files: 93
+Total directories: 47, Total files: 103
