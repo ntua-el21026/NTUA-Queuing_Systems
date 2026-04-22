@@ -133,6 +133,10 @@ NTUA-Queuing_Systems/
 │   │       └── lab4_03121026.pdf
 │   ├── 5th/
 │   │   ├── assignment/
+│   │   │   ├── lab5_2026.pdf
+│   │   │   ├── lab5_help_code.m
+│   │   │   ├── lab5_help_code.txt
+│   │   │   └── lab5_introduction_2026.pdf
 │   │   ├── programs/
 │   │   │   ├── output/
 │   │   │   └── pdf/
@@ -149,4 +153,4 @@ NTUA-Queuing_Systems/
 ├── LICENSE
 └── README.md
 
-Total directories: 47, Total files: 103
+Total directories: 47, Total files: 107
