@@ -1,0 +1,119 @@
+============================================================
+A.1 - Single DES run for lambda = 100 req/sec
+============================================================
+Simulated 10000 fully served requests up to t = 100837.6373 ms = 100.8376 sec
+Total arrivals observed:        10002
+R1, type-1 phase response:      10.579663 ms
+R2, type-2 phase response:      6.398254 ms
+R end-to-end:                   16.977038 ms
+Type-1 jobs served per second:  99.179238
+Type-2 jobs served per second:  99.169321
+Mean #type-1 in system, tw:     1.049398
+Mean #type-2 in system, tw:     0.634528
+Mean total #jobs in system, tw: 1.683926
+
+============================================================
+A.2 - Stationarity across lambda values
+============================================================
+E[S1] = exp(1.5) = 4.481689 ms
+E[S2] = 0.750000 ms
+E[S1] + E[S2] = 5.231689 ms
+Analytical stability condition: rho = lambda*(E[S1]+E[S2])/1000 < 1
+Stability bound: lambda < 191.142858 req/sec
+Running lambda = 50 req/sec, rho = 0.261584 -> stable ... done, t_end = 203.2197 sec, arrivals =
+ 10000, served = 10000
+Running lambda = 100 req/sec, rho = 0.523169 -> stable ... done, t_end = 100.0762 sec, arrivals
+= 10000, served = 10000
+Running lambda = 150 req/sec, rho = 0.784753 -> stable ... done, t_end = 67.1597 sec, arrivals =
+ 10002, served = 10000
+Running lambda = 200 req/sec, rho = 1.046338 -> unstable ... done, t_end = 52.5433 sec, arrivals
+ = 10377, served = 10000
+Running lambda = 250 req/sec, rho = 1.307922 -> unstable ... done, t_end = 65.0984 sec, arrivals
+ = 16152, served = 10000
+
+Analytical classification for A.2:
+  lambda =  50 req/sec: rho = 0.261584 < 1 -> stationary
+  lambda = 100 req/sec: rho = 0.523169 < 1 -> stationary
+  lambda = 150 req/sec: rho = 0.784753 < 1 -> stationary
+  lambda = 200 req/sec: rho = 1.046338 >= 1 -> non-stationary
+  lambda = 250 req/sec: rho = 1.307922 >= 1 -> non-stationary
+
+============================================================
+A.3 - Confidence intervals from independent replications
+============================================================
+
+lambda = 100 req/sec: running 30 independent replications .............................. done
+  Full trace, type 1: mean CI [1.014991, 1.056171], median CI [1.011125, 1.063644]
+  Full trace, type 2: mean CI [0.603187, 0.632896], median CI [0.601051, 0.631790]
+  After transient removal, type 1: mean CI [1.008903, 1.060815], median CI [0.984703, 1.060240]
+  After transient removal, type 2: mean CI [0.599920, 0.636938], median CI [0.586471, 0.647216]
+
+lambda = 180 req/sec: running 30 independent replications .............................. done
+  Full trace, type 1: mean CI [14.476681, 18.489433], median CI [13.566229, 18.068241]
+  Full trace, type 2: mean CI [13.679712, 17.688760], median CI [12.826022, 17.198553]
+  After transient removal, type 1: mean CI [14.638395, 19.446088], median CI [13.488622, 18.9447
+85]
+  After transient removal, type 2: mean CI [13.891899, 18.707440], median CI [12.648005, 18.3375
+82]
+
+============================================================
+A.4 - Little's Law verification for lambda = 100 req/sec
+============================================================
+Without transient removal:
+  R = 16.977038 ms
+  N_sim, time-weighted total jobs = 1.683926
+  lambda * R = (0.100000 req/ms) * 16.977038 ms = 1.697704
+  Percent error = 0.818167 %
+
+With transient removal:
+  Cutoff = 30251.291177 ms = 30.251291 sec, 30% of run time
+  R = 16.830559 ms
+  N_sim, time-weighted total jobs after cutoff = 1.651705
+  lambda * R = (0.100000 req/ms) * 16.830559 ms = 1.683056
+  Percent error = 1.898066 %
+
+============================================================
+FINAL SUMMARY - Lab 5, Part A
+============================================================
+
+A.1  lambda = 100 req/sec, 10000 fully served requests
+  t_end = 100837.637255 ms = 100.837637 sec
+  arrivals = 10002, fully served = 10000
+  R1 = 10.579663 ms, R2 = 6.398254 ms, R = 16.977038 ms
+  throughput: type-1 = 99.179238 jobs/sec, type-2 = 99.169321 jobs/sec
+  time-weighted mean jobs: N1 = 1.049398, N2 = 0.634528, N = 1.683926
+
+A.2  Stability bound
+  lambda < 191.142858 req/sec
+  lambda =  50: rho = 0.261584 -> stationary
+  lambda = 100: rho = 0.523169 -> stationary
+  lambda = 150: rho = 0.784753 -> stationary
+  lambda = 200: rho = 1.046338 -> non-stationary
+  lambda = 250: rho = 1.307922 -> non-stationary
+
+A.3  95% confidence intervals, n = 30 replications
+  Transient removal rule: remove first 30% of each run, guided by MQS(t) plots.
+
+  lambda = 100 req/sec
+    Full trace:
+      type 1: mean CI [1.014991, 1.056171], median CI [1.011125, 1.063644]
+      type 2: mean CI [0.603187, 0.632896], median CI [0.601051, 0.631790]
+    After transient removal:
+      type 1: mean CI [1.008903, 1.060815], median CI [0.984703, 1.060240]
+      type 2: mean CI [0.599920, 0.636938], median CI [0.586471, 0.647216]
+
+  lambda = 180 req/sec
+    Full trace:
+      type 1: mean CI [14.476681, 18.489433], median CI [13.566229, 18.068241]
+      type 2: mean CI [13.679712, 17.688760], median CI [12.826022, 17.198553]
+    After transient removal:
+      type 1: mean CI [14.638395, 19.446088], median CI [13.488622, 18.944785]
+      type 2: mean CI [13.891899, 18.707440], median CI [12.648005, 18.337582]
+
+A.4  Little's Law, lambda = 100 req/sec
+  Without transient removal:
+    R = 16.977038 ms, N_sim = 1.683926, lambda*R = 1.697704, error = 0.818167 %
+  With transient removal:
+    R = 16.830559 ms, N_sim = 1.651705, lambda*R = 1.683056, error = 1.898066 %
+
+Done.

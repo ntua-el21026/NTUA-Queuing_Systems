@@ -139,9 +139,27 @@ NTUA-Queuing_Systems/
 │   │   │   └── lab5_introduction_2026.pdf
 │   │   ├── programs/
 │   │   │   ├── output/
-│   │   │   └── pdf/
+│   │   │   │   ├── lab5_part1_1.png
+│   │   │   │   ├── lab5_part1_2.png
+│   │   │   │   ├── lab5_part1_3.png
+│   │   │   │   ├── lab5_part1_4.png
+│   │   │   │   ├── lab5_part1_5.png
+│   │   │   │   ├── lab5_part1_output.pdf
+│   │   │   │   ├── lab5_part1_output.txt
+│   │   │   │   ├── lab5_part2.png
+│   │   │   │   ├── lab5_part2_output.pdf
+│   │   │   │   └── lab5_part2_output.txt
+│   │   │   ├── pdf/
+│   │   │   │   ├── lab5_part1.pdf
+│   │   │   │   ├── lab5_part1_output.pdf
+│   │   │   │   ├── lab5_part2.pdf
+│   │   │   │   └── lab5_part2_output.pdf
+│   │   │   ├── lab5_part1.m
+│   │   │   └── lab5_part2.m
 │   │   ├── report/
 │   │   └── submission/
+│   │       ├── lab5_part1.m
+│   │       └── lab5_part2.m
 │   └── 6th/
 │       ├── assignment/
 │       ├── programs/
@@ -153,4 +171,4 @@ NTUA-Queuing_Systems/
 ├── LICENSE
 └── README.md
 
-Total directories: 47, Total files: 107
+Total directories: 47, Total files: 125
