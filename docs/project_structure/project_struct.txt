@@ -2,15 +2,19 @@ NTUA-Queuing_Systems/
 ├── docs/
 │   ├── lectures/
 │   │   ├── 1. Εισαγωγή.pdf
+│   │   ├── 10. Μέθοδοι Πρόβελψης - 1.pdf
 │   │   ├── 2. Τεχνικές Σχεδίασης και Αξιολόγησης Συστημάτων Αναμονής.pdf
 │   │   ├── 3. Παράμετροι Ουρών και Συστημάτων Αναμονής.pdf
 │   │   ├── 4. Εκθετική Κατανομή και Κατανομή Poisson - Διαδικασία Markov Γεννήσεων - Θανάτων.pdf
 │   │   ├── 5. Σφαιρικές & Λεπτομερείς Εξισώσεις Ισορροπίας - Ουρές Markov MM1, MM1N.pdf
 │   │   ├── 6. Προσομοίωση.pdf
-│   │   └── 7. Συστήματα Πολλών Εξυπηρετητών.pdf
-│   └── project_structure/
-│       ├── project_struct.py
-│       └── project_struct.txt
+│   │   ├── 7. Συστήματα Πολλών Εξυπηρετητών.pdf
+│   │   ├── 8. Ασκήσεις-Παραδείγματα.pdf
+│   │   └── 9. Δίκτυα Ουρών Αναμονής.pdf
+│   ├── project_structure/
+│   │   ├── project_struct.py
+│   │   └── project_struct.txt
+│   └── README.md
 ├── labs/
 │   ├── 1st/
 │   │   ├── assignment/
@@ -41,11 +45,12 @@ NTUA-Queuing_Systems/
 │   │   ├── report/
 │   │   │   ├── lab1_03121026.pdf
 │   │   │   └── main.tex
-│   │   └── submission/
-│   │       ├── lab1_03121026.pdf
-│   │       ├── lab1_part1.m
-│   │       ├── lab1_part2.m
-│   │       └── lab1_part3.m
+│   │   ├── submission/
+│   │   │   ├── lab1_03121026.pdf
+│   │   │   ├── lab1_part1.m
+│   │   │   ├── lab1_part2.m
+│   │   │   └── lab1_part3.m
+│   │   └── README.md
 │   ├── 2nd/
 │   │   ├── assignment/
 │   │   │   ├── lab2_2026.pdf
@@ -79,11 +84,12 @@ NTUA-Queuing_Systems/
 │   │   ├── report/
 │   │   │   ├── lab2_03121026.pdf
 │   │   │   └── main.tex
-│   │   └── submission/
-│   │       ├── lab2_03121026.pdf
-│   │       ├── lab2_part2.m
-│   │       ├── lab2_part3a.m
-│   │       └── lab2_part3b.m
+│   │   ├── submission/
+│   │   │   ├── lab2_03121026.pdf
+│   │   │   ├── lab2_part2.m
+│   │   │   ├── lab2_part3a.m
+│   │   │   └── lab2_part3b.m
+│   │   └── README.md
 │   ├── 3rd/
 │   │   ├── assignment/
 │   │   │   ├── lab3_2026.pdf
@@ -107,9 +113,10 @@ NTUA-Queuing_Systems/
 │   │   ├── report/
 │   │   │   ├── lab3_03121026.pdf
 │   │   │   └── main.tex
-│   │   └── submission/
-│   │       ├── lab3.m
-│   │       └── lab3_03121026.pdf
+│   │   ├── submission/
+│   │   │   ├── lab3.m
+│   │   │   └── lab3_03121026.pdf
+│   │   └── README.md
 │   ├── 4th/
 │   │   ├── assignment/
 │   │   │   ├── lab4_2026.pdf
@@ -128,50 +135,45 @@ NTUA-Queuing_Systems/
 │   │   ├── report/
 │   │   │   ├── lab4_03121026.pdf
 │   │   │   └── main.tex
-│   │   └── submission/
-│   │       ├── lab4.m
-│   │       └── lab4_03121026.pdf
-│   ├── 5th/
-│   │   ├── assignment/
-│   │   │   ├── lab5_2026.pdf
-│   │   │   ├── lab5_help_code.m
-│   │   │   ├── lab5_help_code.txt
-│   │   │   └── lab5_introduction_2026.pdf
-│   │   ├── programs/
-│   │   │   ├── output/
-│   │   │   │   ├── lab5_part1_1.png
-│   │   │   │   ├── lab5_part1_2.png
-│   │   │   │   ├── lab5_part1_3.png
-│   │   │   │   ├── lab5_part1_4.png
-│   │   │   │   ├── lab5_part1_5.png
-│   │   │   │   ├── lab5_part1_output.pdf
-│   │   │   │   ├── lab5_part1_output.txt
-│   │   │   │   ├── lab5_part2.png
-│   │   │   │   ├── lab5_part2_output.pdf
-│   │   │   │   └── lab5_part2_output.txt
-│   │   │   ├── pdf/
-│   │   │   │   ├── lab5_part1.pdf
-│   │   │   │   ├── lab5_part1_output.pdf
-│   │   │   │   ├── lab5_part2.pdf
-│   │   │   │   └── lab5_part2_output.pdf
-│   │   │   ├── lab5_part1.m
-│   │   │   └── lab5_part2.m
-│   │   ├── report/
-│   │   │   ├── lab5_03121026.pdf
-│   │   │   └── main.tex
-│   │   └── submission/
-│   │       ├── lab5_03121026.pdf
-│   │       ├── lab5_part1.m
-│   │       └── lab5_part2.m
-│   └── 6th/
+│   │   ├── submission/
+│   │   │   ├── lab4.m
+│   │   │   └── lab4_03121026.pdf
+│   │   └── README.md
+│   └── 5th/
 │       ├── assignment/
+│       │   ├── lab5_2026.pdf
+│       │   ├── lab5_help_code.m
+│       │   ├── lab5_help_code.txt
+│       │   └── lab5_introduction_2026.pdf
 │       ├── programs/
 │       │   ├── output/
-│       │   └── pdf/
+│       │   │   ├── lab5_part1_1.png
+│       │   │   ├── lab5_part1_2.png
+│       │   │   ├── lab5_part1_3.png
+│       │   │   ├── lab5_part1_4.png
+│       │   │   ├── lab5_part1_5.png
+│       │   │   ├── lab5_part1_output.pdf
+│       │   │   ├── lab5_part1_output.txt
+│       │   │   ├── lab5_part2.png
+│       │   │   ├── lab5_part2_output.pdf
+│       │   │   └── lab5_part2_output.txt
+│       │   ├── pdf/
+│       │   │   ├── lab5_part1.pdf
+│       │   │   ├── lab5_part1_output.pdf
+│       │   │   ├── lab5_part2.pdf
+│       │   │   └── lab5_part2_output.pdf
+│       │   ├── lab5_part1.m
+│       │   └── lab5_part2.m
 │       ├── report/
-│       └── submission/
+│       │   ├── lab5_03121026.pdf
+│       │   └── main.tex
+│       ├── submission/
+│       │   ├── lab5_03121026.pdf
+│       │   ├── lab5_part1.m
+│       │   └── lab5_part2.m
+│       └── README.md
 ├── .gitattributes
 ├── LICENSE
 └── README.md
 
-Total directories: 47, Total files: 128
+Total directories: 40, Total files: 137
