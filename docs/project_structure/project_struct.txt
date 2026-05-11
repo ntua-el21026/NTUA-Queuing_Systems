@@ -139,41 +139,57 @@ NTUA-Queuing_Systems/
 │   │   │   ├── lab4.m
 │   │   │   └── lab4_03121026.pdf
 │   │   └── README.md
-│   └── 5th/
+│   ├── 5th/
+│   │   ├── assignment/
+│   │   │   ├── lab5_2026.pdf
+│   │   │   ├── lab5_help_code.m
+│   │   │   ├── lab5_help_code.txt
+│   │   │   └── lab5_introduction_2026.pdf
+│   │   ├── programs/
+│   │   │   ├── output/
+│   │   │   │   ├── lab5_part1_1.png
+│   │   │   │   ├── lab5_part1_2.png
+│   │   │   │   ├── lab5_part1_3.png
+│   │   │   │   ├── lab5_part1_4.png
+│   │   │   │   ├── lab5_part1_5.png
+│   │   │   │   ├── lab5_part1_output.pdf
+│   │   │   │   ├── lab5_part1_output.txt
+│   │   │   │   ├── lab5_part2.png
+│   │   │   │   ├── lab5_part2_output.pdf
+│   │   │   │   └── lab5_part2_output.txt
+│   │   │   ├── pdf/
+│   │   │   │   ├── lab5_part1.pdf
+│   │   │   │   ├── lab5_part1_output.pdf
+│   │   │   │   ├── lab5_part2.pdf
+│   │   │   │   └── lab5_part2_output.pdf
+│   │   │   ├── lab5_part1.m
+│   │   │   └── lab5_part2.m
+│   │   ├── report/
+│   │   │   ├── lab5_03121026.pdf
+│   │   │   └── main.tex
+│   │   ├── submission/
+│   │   │   ├── lab5_03121026.pdf
+│   │   │   ├── lab5_part1.m
+│   │   │   └── lab5_part2.m
+│   │   └── README.md
+│   └── 6th/
 │       ├── assignment/
-│       │   ├── lab5_2026.pdf
-│       │   ├── lab5_help_code.m
-│       │   ├── lab5_help_code.txt
-│       │   └── lab5_introduction_2026.pdf
+│       │   ├── dataset.mat
+│       │   ├── filter_forecasting.m
+│       │   ├── filter_forecasting.txt
+│       │   ├── lab6_2026.pdf
+│       │   ├── lab6_intoduction_2_2026.pdf
+│       │   ├── lab6_introduction_1_2026.pdf
+│       │   ├── regression_forecasting.m
+│       │   └── regression_forecasting.txt
 │       ├── programs/
 │       │   ├── output/
-│       │   │   ├── lab5_part1_1.png
-│       │   │   ├── lab5_part1_2.png
-│       │   │   ├── lab5_part1_3.png
-│       │   │   ├── lab5_part1_4.png
-│       │   │   ├── lab5_part1_5.png
-│       │   │   ├── lab5_part1_output.pdf
-│       │   │   ├── lab5_part1_output.txt
-│       │   │   ├── lab5_part2.png
-│       │   │   ├── lab5_part2_output.pdf
-│       │   │   └── lab5_part2_output.txt
-│       │   ├── pdf/
-│       │   │   ├── lab5_part1.pdf
-│       │   │   ├── lab5_part1_output.pdf
-│       │   │   ├── lab5_part2.pdf
-│       │   │   └── lab5_part2_output.pdf
-│       │   ├── lab5_part1.m
-│       │   └── lab5_part2.m
+│       │   └── pdf/
 │       ├── report/
-│       │   ├── lab5_03121026.pdf
-│       │   └── main.tex
 │       ├── submission/
-│       │   ├── lab5_03121026.pdf
-│       │   ├── lab5_part1.m
-│       │   └── lab5_part2.m
 │       └── README.md
 ├── .gitattributes
 ├── LICENSE
 └── README.md
 
-Total directories: 40, Total files: 137
+Total directories: 47, Total files: 146

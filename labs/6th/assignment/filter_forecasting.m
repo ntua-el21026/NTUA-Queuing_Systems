@@ -1,0 +1,96 @@
+close all;
+clear all;
+
+
+%load dataset with 1248 elements
+data = load('dataset.mat');
+
+
+y = double(data.values');
+
+
+%95% prediction interval
+alpha = 0.05;
+
+
+%number of observations for training set
+nob = 1200;
+
+
+yob = y(1:nob);
+
+T = 1;
+%apply differencing at lags 1 and T
+d1yob = diff(yob);
+dTyob = yob(T+1:length(yob))-yob(1:length(yob)-T);
+d1Tyob = diff(dTyob);
+
+
+figure(1)
+%plot data for differencing at lag 1
+plot(nob-length(d1yob)+1:nob, d1yob, 'b')
+title('Differencing at lag 1')
+
+
+
+
+figure(2)
+%plot data for differencing at lag T
+plot(nob-length(dTyob)+1:nob, dTyob, 'b')
+title('Differencing at lag T')
+
+
+figure(3)
+%plot data for differencing at lags 1 and T
+plot(nob-length(d1Tyob)+1:nob, d1Tyob, 'b')
+title('Differencing at lags 1 and T')
+
+
+
+
+yfore = y;
+cint = zeros(length(y)-nob, 1);
+%compute residuals
+res=d1Tyob;
+err=res;
+%compute the impulse response coefficients of the inverse filter (Cf. slide 20)
+imp = [1, zeros(1, length(y)-nob-1)];
+h = [1, -1, zeros(1, T-2), -1, 1];
+inv_h = filter(1, h, imp);
+%compute forecasting and prediction intervals
+for k=nob+1:length(y)
+  yfore(k)=yfore(k-1)+yfore(k-T)-yfore(k-T-1);
+  cint(k-nob) = norminv(1-alpha/2)*sqrt(sum(inv_h(1:k-nob).^2))*std(err);
+end
+
+
+figure(4)
+
+
+npast = T;
+%plot data with forecast and prediction intervals
+plot(nob-npast:nob, y(nob-npast:nob), 'k')
+hold on
+plot(nob+1:length(y), y(nob+1:length(y)), 'o-b')
+plot(nob+1:length(yfore), yfore(nob+1:length(yfore)), 'r')
+plot(nob+1:length(yfore), yfore(nob+1:length(yfore))+cint, 'r-.')
+plot(nob+1:length(yfore), yfore(nob+1:length(yfore))-cint, 'r-.')
+title('Forecast data')
+hold off
+
+
+%compute CRPS metric
+for k=nob+1:length(y)
+    mu(k-nob)=yfore(k);
+    sigma(k-nob)=cint(k-nob)/norminv(1-alpha/2);
+end
+
+
+for k=nob+1:length(y)
+ ans=(y(k)-mu(k-nob))/sigma(k-nob);
+ crps(k-nob)=sigma(k-nob)*(ans*(2*normcdf(ans)-1)+2*normpdf(ans)-1/sqrt(pi));
+end
+
+medianCRPS=median(crps);
+display(medianCRPS);
+
