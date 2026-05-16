@@ -1,0 +1,61 @@
+============================================================
+Lab 6 - Basic Forecasting with Model Selection
+============================================================
+Loaded dataset: dataset.mat
+Number of observations: 1247
+Training observations:  1200
+Forecast observations:  47
+Forecast horizon:       1201 to 1247
+Confidence level:       95%
+
+============================================================
+Linear Regression Candidate Models
+============================================================
+Model                                                          Params    Train MSE          MAE
+        RMSE     Med CRPS
+LR1: constant + daily 24                                            3   521883.168      538.035
+     791.283      260.300
+LR2: linear trend + daily 24                                        4   513540.892      458.657
+     710.656      232.094
+LR3: linear trend + daily 24 + weekly 168                           6   498776.282      419.878
+     675.712      209.130
+LR4: quadratic trend + daily 24 + weekly 168                        7   497531.338      437.483
+     702.799      215.583
+LR5: linear trend + daily 24 + half-daily 12 + weekly 168           8   490046.575      402.893
+     644.796      235.488
+
+Best Linear Regression model by median CRPS:
+  LR3: linear trend + daily 24 + weekly 168
+
+============================================================
+Filter Candidate Models
+============================================================
+Model                                  Order      Res Std          MAE         RMSE     Med CRPS
+
+F1: Delta_24                              24      904.672      475.487      734.967      310.531
+
+F2: Delta_1 Delta_24                      25     1110.336      753.587     1043.372     1338.159
+
+F3: Delta_168                            168      955.139      616.918      864.900      296.036
+
+F4: Delta_1 Delta_168                    169     1176.400      970.518     1219.322     1402.320
+
+F5: Delta_24 Delta_168                   192     1267.724      832.639     1308.248      456.351
+
+
+Best Filter model by median CRPS:
+  F3: Delta_168
+
+============================================================
+Final Selected Models Comparison
+============================================================
+Selected model                               MAE         RMSE     Coverage     Med CRPS
+LR3: linear trend + daily 24 + weekly 168      419.878      675.712       97.87%      209.130
+F3: Delta_168                            616.918      864.900       97.87%      296.036
+
+Overall, the selected Linear Regression model has better median CRPS.
+
+Saved figures as PNG files in the current directory.
+
+Saved model comparison metrics to lab6_model_comparison_results.csv.
+Execution completed successfully.
