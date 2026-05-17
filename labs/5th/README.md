@@ -13,6 +13,12 @@ The implementation is split into two Octave entry points:
 
 Part A uses local random samplers and fallback quantile approximations, with optional use of the Octave `statistics` package when available.
 
+## Inputs and Outputs
+
+- Input material is in `assignment/`, including the lab statement and starter/help code.
+- Generated web-server and Jackson-network plots are committed in `programs/output/`.
+- Exported code and output PDFs are committed in `programs/pdf/`.
+
 ## Organization
 
 - `assignment/`: lab statement, introduction material, and starter/help code.
@@ -24,6 +30,8 @@ Part A uses local random samplers and fallback quantile approximations, with opt
 - `submission/`: final submitted report and code files.
 
 ## Run
+
+The scripts can use the Octave `statistics` package when available, but include fallback approximations for the required quantiles.
 
 ```bash
 cd programs

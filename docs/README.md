@@ -11,4 +11,4 @@ This folder contains supporting material for the NTUA Queuing Systems coursework
 
 The lecture files are kept as reference material for the lab reports and implementations. The project-structure files document the repository layout and are useful when checking whether each lab has the expected `assignment/`, `programs/`, `report/`, and `submission/` folders.
 
-The lab-specific explanations, implementation notes, and run commands are documented in the README files under `labs/1st/` through `labs/5th/`.
+The lab-specific explanations, implementation notes, and run commands are documented in the README files under `labs/1st/` through `labs/6th/`. The `labs/README.md` file gives a compact index across all lab assignments.

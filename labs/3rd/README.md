@@ -16,6 +16,12 @@ The main implementation is `programs/lab3.m`. It:
 
 The simulator is implemented directly in Octave using random event selection and exponential event times.
 
+## Inputs and Outputs
+
+- Input material is in `assignment/`, including the lab statement and starter/help code.
+- Generated state-probability and convergence plots are committed in `programs/output/`.
+- Exported code and output PDFs are committed in `programs/pdf/`.
+
 ## Organization
 
 - `assignment/`: lab statement, introduction material, and starter/help code.
@@ -26,6 +32,8 @@ The simulator is implemented directly in Octave using random event selection and
 - `submission/`: final submitted report and code file.
 
 ## Run
+
+The implementation does not require an Octave package beyond the base runtime.
 
 ```bash
 cd programs

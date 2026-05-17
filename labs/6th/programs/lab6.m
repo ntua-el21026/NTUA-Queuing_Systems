@@ -303,6 +303,35 @@ xlabel('Hour');
 ylabel('Absolute error');
 hold off;
 
+% Figure 8: Common forecast comparison with 95% prediction intervals
+%
+% This figure directly satisfies the requirement of showing, in one common
+% graph, the true future values, the forecasts, and the 95% prediction
+% intervals for the two selected methods.
+figure(8);
+plot(t_all(past_idx), y(past_idx), 'k');
+hold on;
+
+plot(t_all(forecast_idx), y(forecast_idx), 'o-k');
+
+plot(t_all(forecast_idx), best_reg.yhat(forecast_idx), 'r');
+plot(t_all(forecast_idx), best_reg.upper, 'r-.');
+plot(t_all(forecast_idx), best_reg.lower, 'r-.');
+
+plot(t_all(forecast_idx), best_filter.yhat(forecast_idx), 'b');
+plot(t_all(forecast_idx), best_filter.upper, 'b-.');
+plot(t_all(forecast_idx), best_filter.lower, 'b-.');
+
+grid on;
+legend('Past observed data', 'True future values', ...
+       'Selected regression forecast', 'Regression upper 95% PI', 'Regression lower 95% PI', ...
+       'Selected filter forecast', 'Filter upper 95% PI', 'Filter lower 95% PI', ...
+       'location', 'northwest');
+title('Selected models forecast comparison with 95% prediction intervals');
+xlabel('Hour');
+ylabel('GPU resource requests');
+hold off;
+
 if save_figures
   print(1, 'lab6_fig1_dataset_train_test.png', '-dpng');
   print(2, 'lab6_fig2_best_regression_fit.png', '-dpng');
@@ -311,6 +340,17 @@ if save_figures
   print(5, 'lab6_fig5_best_filter_forecast.png', '-dpng');
   print(6, 'lab6_fig6_selected_point_forecast_comparison.png', '-dpng');
   print(7, 'lab6_fig7_selected_absolute_error_comparison.png', '-dpng');
+  print(8, 'lab6_fig8_selected_forecast_intervals_comparison.png', '-dpng');
+
+  % Short aliases, useful for the LaTeX report if you are using lab6_1.png, ..., lab6_8.png.
+  print(1, 'lab6_1.png', '-dpng');
+  print(2, 'lab6_2.png', '-dpng');
+  print(3, 'lab6_3.png', '-dpng');
+  print(4, 'lab6_4.png', '-dpng');
+  print(5, 'lab6_5.png', '-dpng');
+  print(6, 'lab6_6.png', '-dpng');
+  print(7, 'lab6_7.png', '-dpng');
+  print(8, 'lab6_8.png', '-dpng');
 
   fprintf('\nSaved figures as PNG files in the current directory.\n');
 end

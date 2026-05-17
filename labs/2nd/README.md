@@ -14,6 +14,12 @@ The Octave programs cover the computational parts of the assignment:
 
 The scripts use the Octave `queueing` package, mainly `ctmcbd`, `ctmc`, and `qsmm1`.
 
+## Inputs and Outputs
+
+- Input material is in `assignment/`, including the lab statement and starter/help code.
+- Generated steady-state and transient plots are committed in `programs/output/`.
+- Exported code PDFs are committed in `programs/pdf/`.
+
 ## Organization
 
 - `assignment/`: lab statement, introduction material, and starter/help code.
@@ -24,6 +30,8 @@ The scripts use the Octave `queueing` package, mainly `ctmcbd`, `ctmc`, and `qsm
 - `submission/`: final submitted report and code files.
 
 ## Run
+
+Load the `queueing` package before running the scripts if your Octave installation does not load it automatically.
 
 ```bash
 cd programs

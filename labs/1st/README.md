@@ -14,6 +14,12 @@ The Octave programs are split into three parts:
 
 The scripts use the Octave `statistics` package.
 
+## Inputs and Outputs
+
+- Input material is in `assignment/`, including the lab statement, tutorial material, and starter/help code.
+- Generated figures and terminal captures are committed in `programs/output/`.
+- Exported code PDFs are committed in `programs/pdf/`.
+
 ## Organization
 
 - `assignment/`: lab statement, introduction material, Octave tutorial, and starter/help code.
@@ -24,6 +30,8 @@ The scripts use the Octave `statistics` package.
 - `submission/`: final submitted report and code files.
 
 ## Run
+
+Load the `statistics` package before running the scripts if your Octave installation does not load it automatically.
 
 ```bash
 cd programs

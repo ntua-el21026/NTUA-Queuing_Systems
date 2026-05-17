@@ -15,6 +15,12 @@ The main implementation is `programs/lab4.m`. It:
 
 The script uses the Octave `queueing` package.
 
+## Inputs and Outputs
+
+- Input material is in `assignment/`, including the lab statement, extra notes, and starter/help code.
+- Generated terminal output is committed in `programs/output/`.
+- Exported code and output PDFs are committed in `programs/pdf/`.
+
 ## Organization
 
 - `assignment/`: lab statement, extra material, introduction material, and starter/help code.
@@ -25,6 +31,8 @@ The script uses the Octave `queueing` package.
 - `submission/`: final submitted report and code file.
 
 ## Run
+
+Load the `queueing` package before running the script if your Octave installation does not load it automatically.
 
 ```bash
 cd programs

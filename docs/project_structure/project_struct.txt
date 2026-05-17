@@ -3,6 +3,7 @@ NTUA-Queuing_Systems/
 │   ├── lectures/
 │   │   ├── 1. Εισαγωγή.pdf
 │   │   ├── 10. Μέθοδοι Πρόβελψης - 1.pdf
+│   │   ├── 11. Μέθοδοι Πρόβελψης - 2.pdf
 │   │   ├── 2. Τεχνικές Σχεδίασης και Αξιολόγησης Συστημάτων Αναμονής.pdf
 │   │   ├── 3. Παράμετροι Ουρών και Συστημάτων Αναμονής.pdf
 │   │   ├── 4. Εκθετική Κατανομή και Κατανομή Poisson - Διαδικασία Markov Γεννήσεων - Θανάτων.pdf
@@ -172,24 +173,44 @@ NTUA-Queuing_Systems/
 │   │   │   ├── lab5_part1.m
 │   │   │   └── lab5_part2.m
 │   │   └── README.md
-│   └── 6th/
-│       ├── assignment/
-│       │   ├── dataset.mat
-│       │   ├── filter_forecasting.m
-│       │   ├── filter_forecasting.txt
-│       │   ├── lab6_2026.pdf
-│       │   ├── lab6_intoduction_2_2026.pdf
-│       │   ├── lab6_introduction_1_2026.pdf
-│       │   ├── regression_forecasting.m
-│       │   └── regression_forecasting.txt
-│       ├── programs/
-│       │   ├── output/
-│       │   └── pdf/
-│       ├── report/
-│       ├── submission/
-│       └── README.md
+│   ├── 6th/
+│   │   ├── assignment/
+│   │   │   ├── dataset.mat
+│   │   │   ├── filter_forecasting.m
+│   │   │   ├── filter_forecasting.txt
+│   │   │   ├── lab6_2026.pdf
+│   │   │   ├── lab6_introduction_1_2026.pdf
+│   │   │   ├── lab6_introduction_2_2026.pdf
+│   │   │   ├── regression_forecasting.m
+│   │   │   └── regression_forecasting.txt
+│   │   ├── programs/
+│   │   │   ├── output/
+│   │   │   │   ├── lab6_1.png
+│   │   │   │   ├── lab6_2.png
+│   │   │   │   ├── lab6_3.png
+│   │   │   │   ├── lab6_4.png
+│   │   │   │   ├── lab6_5.png
+│   │   │   │   ├── lab6_6.png
+│   │   │   │   ├── lab6_7.png
+│   │   │   │   ├── lab6_8.png
+│   │   │   │   ├── lab6_model_comparison_results.csv
+│   │   │   │   ├── lab6_output.pdf
+│   │   │   │   └── lab6_output.txt
+│   │   │   ├── pdf/
+│   │   │   │   ├── lab6.pdf
+│   │   │   │   └── lab6_output.pdf
+│   │   │   ├── dataset.mat
+│   │   │   └── lab6.m
+│   │   ├── report/
+│   │   │   ├── lab6_03121026.pdf
+│   │   │   └── main.tex
+│   │   ├── submission/
+│   │   │   └── lab6.m
+│   │   └── README.md
+│   ├── README.md
+│   └── Συστήματα Αναμονής - Σημειώσεις Εργαστηριακής Εξέτασης.pdf
 ├── .gitattributes
 ├── LICENSE
 └── README.md
 
-Total directories: 47, Total files: 146
+Total directories: 47, Total files: 167
